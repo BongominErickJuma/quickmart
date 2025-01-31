@@ -64,7 +64,7 @@ const SignUp = () => {
           cvv: "",
         },
       });
-      navigate("/login"); // Redirect to login page
+      navigate("/quickmart/login"); // Redirect to login page
     }
   };
 

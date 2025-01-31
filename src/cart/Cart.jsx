@@ -61,9 +61,9 @@ const Cart = () => {
         </button>
       )}
 
-      <h1 className="uppercase text-forest-green text-2xl text-center">
+      <h3 className="uppercase text-forest-green text-xl text-center">
         Your Cart [ <Number /> ]
-      </h1>
+      </h3>
 
       {/* Render NonEmptyCart or EmptyCart based on cart length */}
       {cart && cart.length > 0 ? <NonEmptyCart /> : <EmptyCart />}
