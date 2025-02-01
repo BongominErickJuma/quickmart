@@ -37,11 +37,13 @@ const Homepage = () => {
         {error && <p className="text-center text-burnt-sienna">{error}</p>}
       </>
 
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-        {products &&
-          products.map((product, ind) => (
-            <Products key={ind} product={product} />
-          ))}
+      <div className="flex flex-column justify-center items-center">
+        <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-4">
+          {products &&
+            products.map((product, ind) => (
+              <Products key={ind} product={product} />
+            ))}
+        </div>
       </div>
     </div>
   );
